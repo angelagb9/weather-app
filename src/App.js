@@ -1,13 +1,17 @@
 import React from 'react'
-import Weather from './components/Weather'
-
 import './App.css';
+import NavMenu from './components/NavMenu';
+import AppRoutes from './AppRoutes';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-        <Weather />
-    </div>
+    <Router>
+        <div className="App">
+          <NavMenu />
+          <AppRoutes />
+      </div>
+    </Router>
   );
 }
 
